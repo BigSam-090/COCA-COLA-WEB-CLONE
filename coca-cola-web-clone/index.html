@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cocacola.com</title>
+        <link rel="stylesheet" href="cocacola.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            
+            <header>
+                <a href="#"><img src="../nasim/cocacola logo.PNG" class="logo"></a>
+                <div class="toggle" onclick="toggleMenu()"></div>
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Whats New</a></li>
+                    <li><a href="#">Contact</a></li> 
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textbox">
+                    <h2>Taste the Feeling</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fugit minima dolores, sunt ab architecto, deleniti accusantium harum quasi eum illum facere eaque corrupti quae natus aliquid nostrum debitis quod.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus esse pariatur illo ab dolor et! In mollitia repudiandae sapiente, qui maiores deserunt officiis blanditiis nulla, laboriosam aliquid laborum. Culpa, praesentium?</p>
+                        <a href="#">Learn More</a>
+                </div>
+            <div class="bag">      
+                </div>
+
+            </div>
+
+            <ul class="sci">
+                <li><a href="#"><img src="../nasim/google icon.png"></a></li>
+                <li><a href="#"><img src="../nasim/apple icon.png"></a></li>
+                <li><a href="#"><img src="../nasim/twitter logo.png"></a></li>
+            </ul>
+
+        </section>
+        <script>
+            function toggleMenu(){
+                const menueToggle = document.querySelector('.toggle');
+                const navigation = document.querySelector('.navigation');
+                menueToggle.classList.toggle('active')
+                navigation.classList.toggle('active') 
+            }
+        </script>
+    </body>
+</html>

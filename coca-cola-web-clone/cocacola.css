@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('Coca-Cola.jpg');
+}
+section .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image:url('coca.jpg');
+    clip-path: circle(60% at right -10%);
+    background-size: cover;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85%;
+    padding: 30px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    max-width: 150px;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+}
+header .navigation li{
+    list-style: none;
+}
+header .navigation li a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left:40px;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 7%;
+}
+.content .bag{
+    width: 50%;
+    height: 40vh;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.content .textbox{
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+}
+.content .textbox h2{
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+    font-weight: 700;
+}
+.content .textbox p{
+    color: #fff;
+}
+.content .textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background:#e51e2a;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.sci{
+    position: absolute;
+    bottom: 40px;
+    left:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    margin-left: 15px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+}
+.sci li a:hover{
+    background: #e51e2a;
+    transform: translateY(-15px);
+}
+.sci li a img{
+    filter: invert(1);
+    transform: scale(0.5);
+}
+@media (max-width: 991px)
+{
+    header
+    {
+        width: 80%;       
+    }
+    section{
+        width: 100%;
+        height: 120vh;
+    }
+
+    .sci{
+        margin-left: 30%;
+    }
+    .sci li a{
+        margin-left: 80px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        width: 10px;
+        height: 10px;
+    }
+   
+
+    .content{
+        width: 80%;
+        height: 100vh;
+        flex-direction: column;
+        margin: 5%;
+    }
+    .content .textbox
+    {
+        width: 100%;
+        margin-top: 20%;
+        text-align: center;
+    }
+    .content .textbox h2{
+        font-size: 2em;
+        margin-bottom: 5px;
+        line-height: 1em;
+        font-weight: 600;
+    }
+    .content .textbox p{
+        color: #fff;
+    }
+    .content .bag{
+        width: 120%;
+        height: 100vh;
+        margin-left: 40%;
+    }
+    .content .bag img{
+        width: 60%;
+        height: 80%;
+    }
+   
+
+    
+}
+
+@media (max-width: 364px)
+{
+    header
+    {
+        width: 60%;       
+    }
+    section{
+        width: 100%;
+        height: 120vh;
+    }
+    .sci{
+        margin-left: 5%;
+    }
+
+    .sci li a{
+        margin-left: 70px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .content{
+        width: 80%;
+        height: 100vh;
+        flex-direction: column;
+        margin: 15%;
+    }
+    .content .textbox
+    {
+        width: 100%;
+        margin-top: 30%;
+        text-align: center;
+    }
+    .content .textbox h2{
+        font-size: 2em;
+        margin-bottom: 5px;
+        line-height: 1em;
+        font-weight: 600;
+    }
+    .content .textbox p{
+        color: #fff;
+    }
+    .content .bag{
+        width: 120%;
+        height: 100vh;
+        margin: 20%;
+   
+    }
+    .content .bag img{
+        width: 90%;
+        height: 80%;
+    }
+    header .logo{
+        position: relative;
+        width: 100px;
+        height: 70px;
+        margin-left:10px ;
+
+    }
+   header .navigation{
+    display: none;
+   }
+   header .navigation li a{
+    margin: 10px 0;
+    font-size: 1.5em;
+    font-weight: 300;
+   }
+   header .navigation.active{
+        position: fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height: 100%;
+        background: rgb(148, 2, 2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+   }
+   .toggle{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url(../nasim/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 1000;
+   }
+    .toggle.active{
+        position: fixed; 
+        right: 40px;
+        background: url(../nasim/menuclose.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 1000;
+    }
+}
